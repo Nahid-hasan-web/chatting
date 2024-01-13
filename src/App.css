@@ -1,0 +1,405 @@
+/* =============================== from part start ========================= */
+.main_auth{
+  @apply flex flex-wrap gap-[50px] items-center 
+}
+.loginFrom{
+  @apply flex justify-center items-center
+}
+.login_animation{
+  @apply lg:w-[900px]
+}
+.mainForm h1{
+  @apply text-3xl mb-5 font-bold text-blue-400
+}
+.mainForm input{
+  @apply sm:w-full  lg:w-[450px] border-2 rounded-[5px] p-2 outline-none border-blue-400
+}
+.mainForm input::placeholder{
+  @apply text-sm font-normal text-blue-400
+}
+.mainForm h3{
+  @apply text-sm mt-5 font-semibold text-blue-400 italic
+}
+.mainForm .error{
+  @apply text-xs font-normal text-orange-600
+}
+.mainForm .preloader{
+  @apply inline-block p-1  text-center rounded-sm mt-5 w-full bg-blue-400  text-white font-bold focus:scale-105 transition-all
+}
+.mainForm button{
+  @apply inline-block p-2 rounded-sm mt-5 w-full bg-blue-400 text-lg text-white font-bold 
+}
+.register_page{
+  @apply flex items-center justify-between mt-3
+}
+.register_page h2{
+  @apply text-sm font-normal text-black 
+}
+.authencation {
+    @apply text-sm font-bold text-blue-400
+}
+.register_page h4{
+  @apply text-sm font-normal text-blue-400 
+}
+/* ------------------------- form part end ------------------------ */
+/* ========================== navbar part start ==================== */
+.navbar{
+  @apply py-3 bg-blue-400  
+}
+.user_box{
+@apply  shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]
+}
+.main_menu{
+  @apply flex justify-between items-center
+}
+.main_menu ul{
+  @apply flex gap-5 text-2xl
+}
+.user_part{
+  @apply flex gap-5  items-center
+}
+.user_part h2{
+  @apply text-xl  font-medium text-black italic
+}
+.user_part .user_image{
+  @apply relative
+}
+.user_part .user_image img{
+  @apply w-14 h-14 rounded-full 
+}
+.user_part .user_image .upload_icon{
+  @apply w-14 h-14 rounded-full bg-[rgba(128,128,128,0.60)]  flex justify-center items-center text-2xl text-white absolute top-0 left-0 opacity-0  transition-all
+}
+.user_part .user_image:hover .upload_icon{
+  @apply opacity-100
+}
+/* --------------------------- navbar part start ---------------------- */
+/* ============================ setProfile part start  ================ */
+.setProfile{
+  @apply p-5 rounded-xl
+  backdrop-blur-sm border-2 border-blue-950
+   p-16  absolute top-1/2 left-1/2
+  translate-x-[-50%] translate-y-[-50%]
+  flex items-center justify-center
+}
+.profileImageUpload{
+  @apply w-[700px]  p-5 rounded-lg bg-[#96EFFF] border-2 border-black flex flex-col items-center justify-center h-[90%]
+}
+.profileImageUpload h2{
+  @apply text-center text-3xl font-bold  text-black mb-5 
+}
+.ppicture{
+  @apply w-[180px] h-[180px] bg-gray-300 rounded-full m-auto
+}
+.upload_input{
+  @apply  border-2 border-white m-5 overflow-hidden  rounded-sm 
+}
+.ppUpload_buttons{
+@apply mt-5
+}
+.ppUpload_buttons .upload_button{
+  @apply py-2 px-7 bg-green-600 rounded-sm text-lg font-semibold mr-3 text-white
+}
+.ppUpload_buttons .upload_cancel_button{
+  @apply py-2 px-7 bg-red-600  rounded-sm text-lg font-semibold mr-3 text-white
+}
+/* -------------------------- setProfile part end --------------------- */
+/* =========================== userlist part start ==================== */
+.allPart{
+  @apply flex justify-between  flex-wrap py-5 gap-y-5
+}
+.userList{
+  @apply w-[700px] h-[500px] rounded-[5px] border-2 border-blue-400 p-2 overflow-y-auto
+}
+.user_box .tittel{
+  @apply  flex justify-between items-center bg-blue-400 rounded-sm mb-3 p-2
+}
+.user_box .tittel h1{
+  @apply text-xl font-bold text-black 
+}
+.user_box .tittel .option_icon{
+  @apply text-xl font-bold text-black 
+}
+.singel_user{
+  @apply flex justify-between  items-center py-2 border-b-2 border-blue-500
+}
+.singel_user .user_data{
+  @apply flex items-center gap-5
+}
+.uer_Name h3{
+  @apply text-lg font-bold text-black italic
+}
+.uer_Name p{
+  @apply text-sm font-normal text-black
+}
+.singel_user .user_pp {
+  @apply w-[50px] h-[50px] rounded-full overflow-hidden
+}
+.user_button {
+  @apply flex gap-2
+}
+.user_button .friend_button{
+  @apply p-1 rounded-sm bg-blue-400 text-sm font-bold text-white
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  @apply bg-blue-400
+}
+::-webkit-scrollbar-track{
+  background: gray;
+}
+/* --------------------------- userlist part end    ------------------- */
+/* =========================== friends part start ==================== */
+.user_button .friend_one{
+  @apply bg-red-600
+}
+.user_button .block{
+  @apply bg-green-600
+}
+/* --------------------------- friends part end    ------------------- */
+/* =========================== messeges part start ==================== */
+.messege_row{
+  @apply flex flex-wrap
+}
+.users_col{
+  @apply  bg-blue-200 w-1/5 h-[785px] overflow-y-scroll p-1 
+}
+.users_col::-webkit-scrollbar{
+  @apply w-[4px]
+}
+.users_col::-webkit-scrollbar-track{
+  @apply bg-blue-400
+}
+.users_col::-webkit-scrollbar-thumb{
+  @apply bg-black
+}
+.single_messege {
+  @apply flex  gap-2 border-b-2 border-blue-500 py-2
+}
+ .messeger_pp{
+  @apply w-12 h-12 rounded-full bg-black 
+}
+.single_messege .messenger_text h2{
+  @apply text-xl font-bold text-black italic
+}
+.single_messege .messenger_text p{
+  @apply text-sm font-normal text-black 
+}
+.messeges_col{
+  @apply w-4/5
+}
+.user_datas{
+  @apply p-2 flex gap-5 bg-blue-100 items-center
+}
+.user_datas .messeger_pp{
+  @apply w-[30px] h-[30px]
+}
+.user_datas .user_id h2{
+    @apply text-xl font-bold text-black italic  
+}
+.user_datas .user_id .activation{
+  @apply flex items-center gap-1
+}
+.user_datas .user_id p{
+  @apply text-sm font-normal text-green-600 
+}
+
+/* --------------------------- messeges part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
+/* =========================== navbar part start ==================== */
+
+
+/* --------------------------- navbar part end    ------------------- */
